@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta name="x5-fullscreen" content="true" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>自我介绍</title>
+    <!--引入style模块-->
+    <link rel="stylesheet" href="styles/style_ind.css" />
+    <!-- 引入高亮模块的颜色 css-->
+    <link rel="stylesheet" href="highlight/styles/a11y-dark.min.css" />
+    <!--引入高亮模块 js-->
+    <script src="./highlight//highlight.min.js"></script>
+  </head>
+
+  <body>
+    <!--头-->
+    <header></header>
+    <div class="container">
+      <!--简介-->
+      <div class="content">
+        <div class="resume">
+          <div class="codeEdit">
+            <pre><code id="test" style='transition: all 2s;'></code></pre>
+          </div>
+          <div class="resume_template">
+            <!--  动画dom -->
+            <div class="animated">
+              <div class="head">
+                <div class="l">
+                  <!-- 头像 -->
+                  <img
+                    src="https://thirdqq.qlogo.cn/g?b=sdk&k=iaz28jpibsqZS6f85Vice7jzA&s=100&t=1665922757"
+                    alt="头像加载失败"
+                  />
+                </div>
+                <div class="r">
+                  <h1 id="title">基础信息</h1>
+                  <ul>
+                    <!-- <li>姓名：曾雄</li>
+                    <li>性别：男</li>
+                    <li>籍贯：四川资阳</li>
+                    <li>生日：2003-6-1</li>
+                    <li>年龄：19</li>
+                    <li>电话：17778531443</li>
+                    <li>邮箱：876340000@qq.com</li> -->
+                    <li>姓名：曾雄</li>
+                    <li>性别：男</li>
+                    <li>籍贯：四川</li>
+                    <li>生日：2003-9-1</li>
+                    <li>年龄：19</li>
+                    <li>电话：17778531443</li>
+                    <li>邮箱：876340000@qq.com</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="cont" id="cont"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--照片集-->
+      <div class="content">
+        <div class="imgs">
+          <div class="photo">
+            <!-- 2d照片墙 -->
+            <div class="photoWall"></div>
+            <!-- 3d盒照片 -->
+            <div class="image3d"></div>
+          </div>
+          <!-- 介绍 -->
+          <div class="explain">
+            <h4>
+              <span id="date"></span>
+              <span id="week"></span>
+              <span id="weather"></span>
+            </h4>
+            <!-- <h4>你好 我是介绍</h4> -->
+            <p class="text"></p>
+          </div>
+        </div>
+      </div>
+      <!--好句分享-->
+      <div class="content">
+        <div class="share"></div>
+      </div>
+    </div>
+    <!--尾-->
+    <footer>
+      <!-- 曲子 -->
+      <div class="lyric">
+        <h1 id="gc">音频模块加载中（未播放请点击此处手动播放）……</h1>
+      </div>
+    </footer>
+    <!--  引入code_edit.js-->
+    <script src="./js/code_edit.js"></script>
+    <script src="./js/start_resume_.js"></script>
+    <script src="./js/imgs_.js"></script>
+    <script src="./js/share_.js"></script>
+    <!-- 载入howler -->
+    <script src="./howler/dist/howler.js"></script>
+    <!-- 音效播放 -->
+    <script src="./js/play_audio.js"></script>
+  </body>
+</html>

@@ -1,0 +1,362 @@
+@font-face {
+  font-family: "sjs";
+  /*给自定义字体命名*/
+  src: url("../ttf/sjsax1.ttf");
+  font-size: 20px;
+}
+@font-face {
+  font-family: "Kingsoft_Cloud_Font";
+  /*给自定义字体命名*/
+  src: url("../ttf/Kingsoft_Cloud_Font.ttf");
+  font-size: 20px;
+}
+@font-face {
+  font-family: "yfjlhs";
+  /*给自定义字体命名*/
+  src: url("../ttf/yfjlhs.ttf");
+  font-size: 20px;
+}
+@font-face {
+  font-family: "Combo";
+  /*给自定义字体命名*/
+  src: url("../ttf/Combo.ttf");
+  font-size: 20px;
+}
+@font-face {
+  font-family: "aoyagireisyosimo_ttf_2_01";
+  /*给自定义字体命名*/
+  src: url("../ttf/aoyagireisyosimo_ttf_2_01.ttf");
+  font-size: 20px;
+}
+pre {
+  margin: 0;
+}
+body {
+  background: linear-gradient(to right, #77a1d3, #79cbca, #e684ae);
+  margin: 0;
+  background-color: rgba(150, 150, 150, 0.2);
+  height: 100vh;
+}
+body::-webkit-scrollbar {
+  width: 1px;
+}
+ul {
+  padding: 0 15px;
+  list-style: none;
+}
+.container {
+  margin: auto;
+  width: 95vw;
+}
+.container .content {
+  height: 100vh;
+  width: 100%;
+}
+.container .resume {
+  box-sizing: border-box;
+  padding-top: 30px;
+  height: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .resume .codeEdit {
+  transition: all 0.5s;
+  position: relative;
+  flex: 4;
+  overflow: hidden;
+  height: 100%;
+  width: 48%;
+  box-shadow: 10px 10px 10px 0px black;
+  background-color: blanchedalmond;
+}
+.container .resume .codeEdit pre {
+  height: 100%;
+}
+.container .resume .codeEdit pre code {
+  font-weight: bold;
+  font-size: 15px;
+  box-sizing: border-box;
+  height: 100%;
+}
+.container .resume .codeEdit pre code::-webkit-scrollbar {
+  width: 3px;
+}
+.container .resume .codeEdit pre code::-webkit-scrollbar-track {
+  background-color: #2e2e2e;
+}
+.container .resume .codeEdit pre code::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #fff;
+}
+.container .resume .resume_template {
+  border: 0.5px solid #2e2e2e;
+  border-radius: 10px;
+  overflow: auto;
+  margin-left: 16px;
+  box-sizing: border-box;
+  flex: 6;
+  height: 100%;
+  width: 48%;
+  box-shadow: 10px 10px 10px 0px;
+}
+.container .resume .resume_template .animated .head {
+  transition: all 2s;
+  position: relative;
+  left: -100%;
+  display: flex;
+}
+.container .resume .resume_template .animated .head .l {
+  margin: auto 0;
+  text-align: center;
+  width: 30%;
+}
+.container .resume .resume_template .animated .head .r {
+  width: 70%;
+}
+.container .resume .resume_template .animated .head .r #title {
+  font-family: "aoyagireisyosimo_ttf_2_01";
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 35px;
+}
+.container .resume .resume_template .animated .head .r #title::before {
+  content: "<—";
+}
+.container .resume .resume_template .animated .head .r #title::after {
+  content: "—>";
+}
+.container .resume .resume_template .animated .head .r ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .resume .resume_template .animated .head .r ul li {
+  font-family: "sjs";
+  flex: 50%;
+}
+.container .resume .resume_template .animated .cont {
+  transition: all 2s;
+  position: relative;
+  padding: 0 30px;
+}
+.container .resume .resume_template .animated .cont p {
+  font-size: 15px;
+}
+.container .resume .resume_template .animated .cont .resume_item {
+  transition: all 1s;
+}
+.container .resume .resume_template .animated .cont .resume_item h3 {
+  font-family: "yfjlhs";
+  border-bottom: 1px solid;
+  color: rgba(37, 126, 226);
+}
+.container .resume .resume_template .animated .cont .resume_item ul > li p {
+  margin: 3px;
+  font-family: "Kingsoft_Cloud_Font";
+}
+.container .resume .resume_template .animated .cont .resume_item ul > li p span {
+  padding: 0 5px;
+  color: red;
+}
+.container .resume .resume_template .animated .cont .resume_item ul > li p::before {
+  content: "♦";
+  color: #2ebb96;
+  padding-right: 15px;
+  font-size: 20px;
+  font-family: "-webkit-pictograph";
+}
+.container .resume .resume_template::-webkit-scrollbar {
+  width: 5px;
+}
+.container .resume .resume_template::-webkit-scrollbar-track {
+  background-color: rgba(1, 1, 1, 0);
+}
+.container .resume .resume_template::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(119, 163, 210);
+}
+.container .imgs {
+  transition: all 0.5s;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 5% 0;
+  display: flex;
+}
+.container .imgs .photo {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+.container .imgs .photo .photoWall {
+  flex: 7;
+}
+.container .imgs .photo .photoWall ul {
+  overflow: auto;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.container .imgs .photo .photoWall ul li {
+  box-shadow: 0 0 13px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: white;
+  width: 30%;
+  overflow: hidden;
+}
+.container .imgs .photo .photoWall ul li img {
+  height: 80%;
+  width: 100%;
+}
+.container .imgs .photo .photoWall ul li p {
+  margin: 0;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.container .imgs .photo .photoWall ul li:hover {
+  box-shadow: 0 0 13px yellow;
+}
+.container .imgs .photo .photoWall ul::-webkit-scrollbar {
+  width: 0;
+  height: 1px;
+}
+.container .imgs .photo .photoWall ul::-webkit-scrollbar-thumb {
+  background-color: #2e2e2e;
+}
+.container .imgs .photo .photoWall ul::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+.container .imgs .photo .image3d {
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  position: relative;
+  transform-style: preserve-3d;
+  flex: 3;
+}
+.container .imgs .photo .image3d .carrier {
+  transform-style: preserve-3d;
+  animation: rotate3d 7s linear infinite;
+  width: 50%;
+  margin: auto;
+  height: 100%;
+  position: absolute;
+}
+.container .imgs .photo .image3d .carrier img {
+  border: 3px solid whitesmoke;
+  box-shadow: 0 0 20px 0 whitesmoke;
+  position: absolute;
+}
+.container .imgs .explain {
+  box-shadow: 20px -20px 0px 0px black;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid;
+  flex: 1;
+}
+.container .imgs .explain h4 {
+  transition: all 0.5s;
+  text-align: center;
+}
+.container .imgs .explain p {
+  transition: all 0.5s;
+  line-height: 180%;
+  text-indent: 30px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.container .share {
+  transform-style: preserve-3d;
+  display: flex;
+  padding: 45px;
+  height: 100%;
+  box-sizing: border-box;
+  align-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .share > div {
+  transform-style: preserve-3d;
+  margin: 3px;
+  transition: all 1s;
+  transform-origin: bottom;
+  width: 30%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.container .share > div img {
+  height: 40%;
+  border-radius: 13px;
+}
+.container .share > div p {
+  padding: 3px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.container .share > div .c_ {
+  position: absolute;
+  box-shadow: inset 0 0 20px 5px #ffffff;
+}
+.container .share > div .before {
+  width: 100%;
+  height: 100%;
+  transform: translateZ(15px);
+}
+.container .share > div .bottom {
+  width: 100%;
+  height: 15px;
+  bottom: 0;
+  transform-origin: bottom;
+  transform: rotateX(-90deg);
+}
+.container .share > div .top {
+  width: 100%;
+  height: 15px;
+  top: 0;
+  transform-origin: top;
+  transform: rotateX(90deg);
+  box-shadow: inset 0 0 20px 0 rgba(255, 255, 255, 0.2);
+}
+footer .lyric h1 {
+  font-family: "yfjlhs";
+  z-index: 9999999;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: all 5s;
+  margin: 0;
+  opacity: 0.2;
+  color: mediumblue;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@keyframes rotate3d {
+  0% {
+    left: 0;
+    transform: rotate3d(1, 1, 1, 0deg) scale3d(0.5, 0.5, 0.5);
+  }
+  25% {
+    transform: rotate3d(1, 1, 1, 90deg) scale3d(0.8, 0.8, 0.8);
+  }
+  50% {
+    left: 50%;
+    transform: rotate3d(1, 1, 1, 180deg) scale3d(0.5, 0.5, 0.5);
+  }
+  75% {
+    transform: rotate3d(1, 1, 1, 270deg) scale3d(0.8, 0.8, 0.8);
+  }
+  100% {
+    left: 0;
+    transform: rotate3d(1, 1, 1, 360deg) scale3d(0.5, 0.5, 0.5);
+  }
+}
